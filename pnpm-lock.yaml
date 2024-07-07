@@ -23,6 +23,9 @@ importers:
       typescript:
         specifier: ^5.5.3
         version: 5.5.3
+      vitest:
+        specifier: ^1.6.0
+        version: 1.6.0(@types/node@20.14.9)
 
   packages/core:
     dependencies:
@@ -57,6 +60,9 @@ importers:
       aws-sdk:
         specifier: ^2.1654.0
         version: 2.1654.0
+      stripe:
+        specifier: ^16.2.0
+        version: 16.2.0
       uuid:
         specifier: ^10.0.0
         version: 10.0.0
@@ -2777,6 +2783,10 @@ packages:
 
   strip-literal@2.1.0:
     resolution: {integrity: sha512-Op+UycaUt/8FbN/Z2TWPBLge3jWrP3xj10f3fnYxf052bKuS3EKs1ZQcVGjnEMdsNVAM+plXRdmjrZ/KgG3Skw==}
+
+  stripe@16.2.0:
+    resolution: {integrity: sha512-kNHb5x6mlQJ8V92Afn+F+uyHG3U0+Mc1pOYxDkbEh/kI3oF63URnUt6dwTQthELYWBy04arerm2XjwgtzEPDEA==}
+    engines: {node: '>=12.*'}
 
   strnum@1.0.5:
     resolution: {integrity: sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==}
@@ -6889,6 +6899,11 @@ snapshots:
   strip-literal@2.1.0:
     dependencies:
       js-tokens: 9.0.0
+
+  stripe@16.2.0:
+    dependencies:
+      '@types/node': 20.14.9
+      qs: 6.11.0
 
   strnum@1.0.5: {}
 
